@@ -1,5 +1,7 @@
 // src/Table.jsx
 import React from "react";
+import mongoose from "mongoose";
+
 
 function TableHeader() {
   return (
@@ -19,7 +21,7 @@ function TableBody(props) {
       <tr key={index}>
         <td>{row.name}</td>
         <td>{row.job}</td>
-        <td>{row.id}</td>
+        <td>{row._id}</td>
         <td>
         <button onClick={() => props.removeCharacter(index)}>
           Delete

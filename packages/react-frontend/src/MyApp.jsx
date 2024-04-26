@@ -38,7 +38,7 @@ function MyApp() {
   }
 
   function deleteUser(person) {
-    const promise = fetch(("Http://localhost:8000/users/".concat(person["id"])), {
+    const promise = fetch(("Http://localhost:8000/users/".concat(person["_id"])), {
       method: "DELETE"});
     return promise;
   }
